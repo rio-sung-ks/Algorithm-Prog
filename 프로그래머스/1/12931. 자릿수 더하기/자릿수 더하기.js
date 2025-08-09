@@ -1,12 +1,9 @@
-function solution(n) {
-    let digitArray = n.toString().split('');
+function solution(n)
+{
+    let array = Array.from(String(n), Number);
     let sum = 0;
-    for (let i = 0; i < digitArray.length; i++) {
-        sum += Number(digitArray[i]);
+    for (let i = 0; i < array.length; i ++) {
+        sum += array[i];
     }
-
     return sum;
 }
-
-let n = 123;
-solution(n)
