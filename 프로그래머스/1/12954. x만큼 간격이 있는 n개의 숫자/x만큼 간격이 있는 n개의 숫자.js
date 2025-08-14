@@ -1,10 +1,7 @@
 function solution(x, n) {
-    let num = x;
-    let arr = [num]; 
-    for (let i = 0; i < n - 1; i++) {
-        num += x;
-        arr.push(num)
+    let arr = [];
+    for (let i = 1; i <= n; i++) {
+        arr.push(x*i);
     }
-    console.log("arr :",arr);
     return arr;
 }
