@@ -1,7 +1,7 @@
-function solution(n) {
-    let num = 1;
-    while(n % num !== 1){
-        num ++;
+function solution(n, x = 1) {
+    while (x++) {
+        if (n % x === 1) {
+            return x;
+        }
     }
-    return num; 
 }
