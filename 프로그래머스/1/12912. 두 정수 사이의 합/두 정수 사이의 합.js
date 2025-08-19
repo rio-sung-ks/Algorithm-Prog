@@ -7,7 +7,7 @@ function solution(a, b) {
 //     (b-a)(b+a) + (b+a)
 //     (b+a)(b-a+1) / 2
 
-    // return Math.abs(a-b+1) * (a+b) / 2
-    return (a+b) * (Math.abs(a-b)+1) / 2;
+    return (Math.abs(b-a)+1) * (b+a) / 2
+    
 }
 
