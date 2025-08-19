@@ -1,13 +1,13 @@
 function solution(a, b) {
-    let sum = 0;
-    if (b > a) {
-        for (let i = a; i <= b; i++) {
-            sum += i;
-        }
-    } else {
-        for (let i = b; i <= a; i++) {
-            sum += i;
-        }
-    }
-    return sum;
+  
+//      (b * (b + 1)) / 2
+//      - (a * (a + 1)) / 2
+    
+//     b2 + b - a2 + a
+//     (b-a)(b+a) + (b+a)
+//     (b+a)(b-a+1) / 2
+
+    // return Math.abs(a-b+1) * (a+b) / 2
+    return (a+b) * (Math.abs(a-b)+1) / 2;
 }
+
