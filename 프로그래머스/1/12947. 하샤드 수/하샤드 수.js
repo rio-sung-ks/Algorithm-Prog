@@ -1,12 +1,9 @@
 function solution(x) {
-    
-    let arr = x.toString().split('');
+    let num = x;
     let sum = 0;
-    for (let i = 0; i < arr.length; i++) {
-        sum += Number(arr[i]);
+    while (x>0) {
+        sum += x%10;
+        x = Math.trunc(x/10);
     }
-    if (x % sum === 0) {
-        return true;
-    }
-    return false;
+    return num % sum === 0;
 }
